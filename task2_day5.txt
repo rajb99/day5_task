@@ -1,0 +1,100 @@
+let resume = {
+  "name": "Bhavya Raj",
+  "contact": {
+    "email": "rajbhavya105@gmail.com",
+    "phone": "+919026536580",
+    "address": "Gomti nagar, Lucknow, UP, India"
+  },
+  "summary": "Hardworking and passionate, with willingness to take on added responsibility",
+  "experience": [
+    {
+      "position": "Associate Analyst",
+      "company": "Globallogic",
+      "location": "Gurugram, Haryana",
+      "start_date": "2022-10-31",
+      "end_date": "2023-10-31",
+      "description": "Analysis of Machine Learning datasets present in the form of images and videos, which are further used to train AI."
+    },
+    {
+      "position": "Oracle EBS Trainee",
+      "company": "Rostan Pvt Ltd",
+      "location": "Gurugram, Haryana",
+      "start_date": "2022-08-01",
+      "end_date": "2022-09-01",
+      "description": "Use of Oracle EBS Technical systemfor fetching queries, building reports, and providing solution to logistics related problem, with SQL and PLSQL."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Information Technology",
+      "institution": "AKTU",
+      "location": "Prayagraj, UP",
+      "graduation_year": 2022
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "HTML5",
+    "CSS3",
+    "Git",
+    "MS Excel",
+    "Communication and Teamwork",
+    "Problem Solving"
+  ]
+};
+
+// Using 'for' loop
+console.log("Using 'for' loop:");
+for (let key in resume) {
+  if (Array.isArray(resume[key])) {
+    console.log(key + ": ");
+    for (let i = 0; i < resume[key].length; i++) {
+      console.log("\t" + JSON.stringify(resume[key][i]));
+    }
+  } else {
+    console.log(key + ": " + resume[key]);
+  }
+}
+
+// Using 'for in'
+console.log("\nUsing 'for in' loop:");
+for (let key in resume) {
+  if (Array.isArray(resume[key])) {
+    console.log(key + ": ");
+    for (let i = 0; i < resume[key].length; i++) {
+      console.log("\t" + JSON.stringify(resume[key][i]));
+    }
+  } else {
+    console.log(key + ": " + resume[key]);
+  }
+}
+
+// Using 'for of' 
+console.log("\nUsing 'for of' loop:");
+for (let [key, value] of Object.entries(resume)) {
+  if (Array.isArray(value)) {
+    console.log(key + ": ");
+    value.forEach(item => {
+      console.log("\t" + JSON.stringify(item));
+    });
+  } else {
+    console.log(key + ": " + value);
+  }
+}
+
+// Using forEach
+console.log("\nUsing forEach:");
+Object.entries(resume).forEach(([key, value]) => {
+  if (Array.isArray(value)) {
+    console.log(key + ": ");
+    value.forEach(item => {
+      console.log("\t" + JSON.stringify(item));
+    });
+  } else {
+    console.log(key + ": " + value);
+  }
+});

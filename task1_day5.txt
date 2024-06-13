@@ -1,0 +1,48 @@
+{
+  "name": "Bhavya Raj",
+  "contact": {
+    "email": "rajbhavya105@gmail.com",
+    "phone": "+919026536580",
+    "address": "Gomti nagar, Lucknow, UP, India"
+  },
+  "summary": "Hardworking and passionate, with willingness to take on added responsibility",
+  "experience": [
+    {
+      "position": "Associate Analyst",
+      "company": "Globallogic",
+      "location": "Gurugram, Haryana",
+      "start_date": "2022-10-31",
+      "end_date": "2023-10-31",
+      "description": "Analysis of Machine Learning datasets present in the form of images and videos, which are further used to train AI."
+    },
+    {
+      "position": "Oracle EBS Trainee",
+      "company": "Rostan Pvt Ltd",
+      "location": "Gurugram, Haryana",
+      "start_date": "2022-08-01",
+      "end_date": "2022-09-01",
+      "description": "Use of Oracle EBS Technical systemfor fetching queries, building reports, and providing solution to logistics related problem, with SQL and PLSQL."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Information Technology",
+      "institution": "AKTU",
+      "location": "Prayagraj, UP",
+      "graduation_year": 2022
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "HTML5",
+    "CSS3",
+    "Git",
+    "MS Excel",
+    "Communication and Teamwork",
+    "Problem Solving"
+  ]
+}
